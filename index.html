@@ -8,48 +8,63 @@
   <link rel="stylesheet" href="/css/styles.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,500;0,700;0,900;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,500;0,700;0,900;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
   <title>Frontend Mentor | Order summary card</title>
 
 
 </head>
 
 <body>
-  <main>
-    <div class="container">
-  <header>
-    <img src="/images/illustration-hero.svg" alt="Now you are starting the fun!" class="hero"> 
-  </header>
-  <section class="info">
-    <h1>Order Summary</h1>
-    
-      <p>You can now listen to millions of songs, audiobooks, and podcasts on any
-        device anywhere you like!</p>
-    </section>
-    <section class="your-plan">
-      
-        <img src="/images/icon-music.svg" alt="icon-music">
-        <div class="plan">
-        <p>Annual Plan </p>
-        <p>$59.99/year</p>
-      </div>
-        <a href="#">Change</a>
-    </section>
-    <section class="btn-group">
-      <ul>
-        <li><a href="#" class="button">Proceed to Payment</a></li>
-        <li><a href="#" class="button">Cancel Order</a></li>
-      </ul>
+  <main class="flex flex-column">
+    <div id="container" class="auto-margin">
+      <div class="flex flex-column display-fit">
+        <header>
+          <img src="/images/illustration-hero.svg" alt="Now you are starting the fun!" class="hero">
+        </header>
+        <section class="flex flex-column auto-margin">
+          <h1 id="summary" class="block text-bold text-dark">Order Summary</h1>
 
-    </section>
-  </div>
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-    Coded by <a href="https://github.com/encoreOax" target="_blank">Hector Sanchez Coronel</a>.
-  </div>
+          <p id="paragraph" class="block">You can now listen to millions of songs, audiobooks, and podcasts on any
+            device anywhere you like!</p>
+        </section>
+        <div class="spacer"></div>
+        <section id="plan" class="flex display-fit auto-margin round-rectangle">
+          <div class="flex">
+          <div class="margin-zone flex flex-column">
+            <img src="/images/icon-music.svg" alt="icon-music" >
+          </div>
+          <div class="margin-zone" style="display: flex; flex-direction: column; align-items:center; justify-content: left;">
+            <p class="text-bold text-dark">Annual Plan </p>
+            <p>$59.99/year</p>
+          </div>
+        </div>
+          <div class="margin-zone" style="align-self: center;">
+            <a href="#" class="text-normal">Change</a>
+          </div>
+        </section>
+        <div class="spacer"></div>
+        <section id="btn-section" class="flex flex-column auto-margin round-rectangle text-normal">
+          <ul class="flex flex-column">
+            
+            <li >
+                <a href="#" id="proceed" class="font-clear button round-rectangle block">Proceed to Payment</a>
+            </li>
+          
+            <li><a href="#" id="cancel" class="font-grey block auto-margin" >Cancel Order</a></li>
+          </ul>
+
+        </section>
+      </div>
+    </div>
+    <div class="attribution auto-margin">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.</br>
+      Coded by <a href="https://github.com/encoreOax" target="_blank">Hector Sanchez Coronel</a>.
+    </div>
   </main>
-  
+
 </body>
 
 </html>
