@@ -36,7 +36,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://vercel-summary-order.vercel.app/)
+- Solution URL: [Add solution URL here](https://order-summary-component-main-cyan.vercel.app/)
 
 
 ## My process
